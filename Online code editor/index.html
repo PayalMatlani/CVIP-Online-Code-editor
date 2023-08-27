@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Code Editor</title>
+    <link rel="stylesheet" href="./Css/Style.css">
+    <script src="http://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="content">
+            <label for="html"><i class="fa-brands fa-html5"></i> HTML</label>
+            <br>
+            <br>
+            <textarea id="html-code" name="html" onkeyup="updateOutput()" placeholder="html"></textarea>
+            <br>
+            <br>
+            <label for="Css"><i class="fa-brands fa-css3-alt"></i> CSS</label>
+            <br>
+            <br>
+            <textarea id="Css-code" name="Css" onkeyup="updateOutput()" placeholder="Css"></textarea>
+            <br>
+            <br>
+            <label for="javascript"><i class="fa-brands fa-js"></i> JAVASCRIPT</label>
+            <br>
+            <br>
+            <textarea id="javascript-code" name="javascript" onkeyup="updateOutput()" placeholder="javascript"></textarea>
+        </div>
+    </header>
+    <br>
+    <section>
+        <label for="Output"><i class="fa-solid fa-play"></i> Output</label>
+        <br>
+        <br>
+        <iframe id="Output" width="100%" height="400"></iframe>
+    </section>
+    <script src="./js/main.js"></script>
+</body>
+</html>
